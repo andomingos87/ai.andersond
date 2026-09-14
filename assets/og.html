@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>og · ai.andersond</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,500;12..96,75..100,700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  /* Fonte do assets/og.png (1200x630). Gerar: ver README › "Regenerar o og.png". */
+  html, body { margin: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: var(--color-lousa); color: var(--color-giz);
+    font-family: var(--font-family); font-optical-sizing: auto;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 72px; box-sizing: border-box;
+  }
+  .eyebrow { display: flex; align-items: center; gap: 14px; font-weight: 500; font-size: 22px; color: var(--text-on-dark-muted); }
+  .eyebrow::before { content: ""; width: 36px; height: 3px; background: var(--color-menta); }
+  h1 { margin: 28px 0 0; font-weight: 700; font-size: 112px; letter-spacing: -0.02em; line-height: 1.02; max-width: 11ch; }
+  .foot { display: flex; justify-content: space-between; align-items: baseline; }
+  .wordmark { display: inline-flex; align-items: baseline; font-weight: 700; font-size: 40px; letter-spacing: -0.02em; line-height: 1; }
+  .dot { display: inline-block; width: .18em; height: .18em; margin: 0 .04em; background: var(--color-cobre); border-radius: 2px; transform: translateY(-.01em); }
+  .tag { font-weight: 500; font-size: 22px; color: var(--text-on-dark-muted); }
+</style>
+</head>
+<body>
+  <div>
+    <p class="eyebrow" style="margin:0">Para quem não é da tecnologia</p>
+    <h1>IA no que você já faz</h1>
+  </div>
+  <div class="foot">
+    <span class="wordmark">ai<span class="dot"></span>andersond</span>
+    <span class="tag">Um ponto por vídeo.</span>
+  </div>
+</body>
+</html>

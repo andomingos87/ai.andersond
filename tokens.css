@@ -1,0 +1,72 @@
+/* ============================================================
+   ai.andersond · tokens da direção "Lousa" · v1.0.0 (10/09/2026)
+   Fonte normativa: tokens.json (W3C Design Tokens).
+   Regra: copie o hex, nunca aproxime. Sombra e gradiente não existem.
+   ============================================================ */
+:root {
+  /* --- cor (tokens.json › color) --- */
+  --color-lousa: #1E3B33;         /* base: fundo padrão */
+  --color-lousa-escura: #152A25;  /* profundidade, faixas, lower third */
+  --color-giz: #EEE9DC;           /* texto sobre lousa; fundo claro */
+  --color-cobre: #D2823F;         /* SÓ o ponto da marca */
+  --color-menta: #9ED3BC;         /* acento frio: linha, número, gráfico */
+  --color-grafite: #1F2421;       /* texto sobre giz */
+
+  /* --- semântica (tokens.json › semantic) --- */
+  --bg-default: var(--color-lousa);
+  --bg-deep: var(--color-lousa-escura);
+  --bg-light: var(--color-giz);
+  --text-on-dark: var(--color-giz);
+  --text-on-dark-muted: rgba(238, 233, 220, 0.6);   /* giz a 60% (#EEE9DC99) */
+  --text-on-light: var(--color-grafite);
+  --text-accent: var(--color-menta);
+
+  /* derivados desta implementação (não estão no tokens.json) */
+  --text-on-dark-soft: rgba(238, 233, 220, 0.82);
+  --text-on-light-muted: rgba(31, 36, 33, 0.6);
+  --text-on-light-soft: rgba(31, 36, 33, 0.82);
+  --line-on-dark: rgba(238, 233, 220, 0.14);
+  --line-on-light: rgba(31, 36, 33, 0.14);
+  --border-ghost: rgba(238, 233, 220, 0.4);
+
+  /* --- tipografia (tokens.json › font) --- */
+  --font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-weight-text: 400;
+  --font-weight-label: 500;
+  --font-weight-display: 700;
+  --font-width-normal: 100%;
+  --font-width-condensed: 80%;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-26: 26px;
+  --font-size-34: 34px;
+  --font-size-44: 44px;
+  --font-size-58: 58px;
+  --font-size-76: 76px;
+  --letter-spacing-display: -0.02em;
+  --letter-spacing-text: 0;
+  --line-height-display: 1.02;
+  --line-height-text: 1.45;
+
+  /* --- espaço (tokens.json › space) --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --margin-ratio: 6%;             /* margem = 6% da largura do formato */
+
+  /* --- raio (tokens.json › radius) --- */
+  --radius-none: 0px;
+  --radius-dot: 2px;              /* cantos do ponto da marca */
+  --radius-photo: 8px;            /* único raio permitido em imagem */
+
+  /* --- explícitos: não existem nesta identidade --- */
+  --shadow-none: none;
+  --gradient-none: none;
+}
