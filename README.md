@@ -46,13 +46,14 @@ Depois abra `http://localhost:8000`.
 
 ## Deploy
 
-- **Vercel:** importar o repo; é detectado como site estático, sem configuração.
-- **GitHub Pages:** Settings › Pages › branch `main`, pasta `/ (root)`.
+- **Produção:** https://ai-andersond.vercel.app (Vercel, site estático sem configuração).
+- **Redeploy:** push na `main` com a integração Git da Vercel ativa, ou `vercel --prod` na raiz.
+- **URLs absolutas:** `og:url`, `og:image`, `twitter:image` e `canonical` em `index.html` apontam para a URL acima.
 
 ## Pendências (Fase 2 da identidade)
 
 - [ ] **Fotos.** Trocar os dois placeholders (`figure.hero-photo` e `figure.about-photo`) por `<img>` em `assets/fotos/`. Regras: luz natural ou lateral quente, altura dos olhos, plano médio, roupa lisa.
-- [ ] **Domínio.** Ao definir, trocar `og:image` e `twitter:image` para URL absoluta e adicionar `<link rel="canonical">`.
+- [ ] **Domínio próprio.** Quando existir, trocar as quatro URLs absolutas de `index.html` (hoje em `ai-andersond.vercel.app`) e regenerar nada mais: o `og.png` não muda.
 - [ ] **Links.** Só Instagram e Aurea estão confirmados. YouTube, LinkedIn e e-mail entram quando existirem.
 - [ ] **Frase de bio** (até 150 caracteres, com CTA), pendência do doc de identidade.
 

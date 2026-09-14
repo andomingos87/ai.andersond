@@ -5,6 +5,7 @@ Site estático da marca pessoal **@ai.andersond**: `index.html` + `tokens.css` +
 ## Fonte de verdade
 
 - `tokens.json` (W3C Design Tokens, v1.0.0) é **normativo**. `tokens.css` só o espelha: mudou um, mude o outro na mesma passada.
+- Produção: https://ai-andersond.vercel.app (Vercel). As URLs absolutas de `og:url`, `og:image`, `twitter:image` e `canonical` em `index.html` apontam para lá; se o domínio mudar, trocar as quatro.
 - O documento de identidade ("Identidade Visual — Direção Lousa") vive no vault do Anderson em `Anderson - SM/01 - Identidade Visual/`; os originais estão em `/Users/mac/Downloads/identidade-visual-anderson/`. Este repo **implementa** a identidade, não a redefine.
 
 ## Regras que não se negociam
